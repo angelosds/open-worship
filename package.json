@@ -9,7 +9,10 @@
     "express": "^4.17.1",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
-    "react-scripts": "3.4.0"
+    "react-scripts": "3.4.0",
+    "sequelize": "^5.21.5",
+    "sqlite3": "^4.1.1",
+    "umzug": "^2.2.0"
   },
   "main": "main.js",
   "scripts": {
@@ -17,7 +20,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "start-electron": "electron ."
+    "start-electron": "electron .",
+    "postinstall": "electron-rebuild -f -w sqlite3",
+    "add-migration": "sequelize migration:generate"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -35,6 +40,8 @@
     ]
   },
   "devDependencies": {
-    "electron": "^8.0.3"
+    "electron": "^8.0.3",
+    "electron-rebuild": "^1.10.0",
+    "sequelize-cli": "^5.5.1"
   }
 }
