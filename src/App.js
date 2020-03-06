@@ -1,8 +1,12 @@
 import React from 'react';
 
+import * as S from './styles';
+
 function App() {
   return (
-    <div>Open Worship</div>
+    <div>
+      <S.GlobalStyle theme={[113, 61, 235]} />
+    </div>
   );
 }
 
