@@ -2,8 +2,8 @@ import React from 'react';
 
 import * as S from './styles';
 
-const Logo = ({ className }) => (
-  <svg className={className} viewBox="0 0 59 59" fill="none">
+const Logo = () => (
+  <svg viewBox="0 0 59 59" fill="none">
     <S.Rect x="10.8977" y="13.7322" width="4" height="50" rx="2" transform="rotate(-45 10.8977 13.7322)" />
     <S.Rect x="30.0017" y="22.9246" width="4" height="30" rx="2" transform="rotate(-45 30.0017 22.9246)" />
     <S.Rect x="0.998169" y="23.6317" width="4" height="30" rx="2" transform="rotate(-45 0.998169 23.6317)" />

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import Card from '../../components/card';
 import Logo from '../../components/logo';
@@ -13,5 +14,9 @@ const MainLayout = ({ children }) => (
     {children}
   </S.MainLayout>
 );
+
+MainLayout.propTypes = {
+  children: PropTypes.element,
+};
 
 export default MainLayout;
