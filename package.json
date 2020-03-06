@@ -18,11 +18,12 @@
   },
   "main": "main.js",
   "scripts": {
+    "start": "concurrently \"react-scripts start\" \"electron .\"",
+    "start-electron": "electron .",
     "start-react": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "start-electron": "electron .",
     "postinstall": "electron-rebuild -f -w sqlite3",
     "add-migration": "sequelize migration:generate"
   },
@@ -42,6 +43,7 @@
     ]
   },
   "devDependencies": {
+    "concurrently": "^5.1.0",
     "electron": "^8.0.3",
     "electron-rebuild": "^1.10.0",
     "sequelize-cli": "^5.5.1"
