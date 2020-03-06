@@ -70,9 +70,6 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background-color: rgb(var(--background));
-    color: rgb(var(--text));
-    font-family: 'Quicksand', serif;
     font-size: 1.6rem;
     margin: 0;
   }
