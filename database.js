@@ -6,6 +6,9 @@ const umzug = new Umzug({
     storageOptions: {
         sequelize: db.sequelize,
     },
+    migrations: {
+      params: [db.sequelize.getQueryInterface(), db.Sequelize],
+    },
 });
 
 umzug.up();
