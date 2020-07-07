@@ -45,7 +45,7 @@
   },
   "devDependencies": {
     "concurrently": "^5.1.0",
-    "electron": "^8.0.3",
+    "electron": "^8.2.4",
     "electron-rebuild": "^1.10.0",
     "sequelize-cli": "^5.5.1"
   }
